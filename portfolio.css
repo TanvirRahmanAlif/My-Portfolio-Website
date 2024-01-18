@@ -266,3 +266,20 @@ textarea {
     background: #fd6f0a52;
     border: 0px;
 }
+
+/* Responsive Styles */
+
+/* Mobile Device */
+
+/* .hide{ */
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skills-container{
+        flex-direction: column;
+    }
+    #widd{
+        padding: 20px;
+    }
+    
+}
