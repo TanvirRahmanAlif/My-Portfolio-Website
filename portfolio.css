@@ -126,7 +126,7 @@ nav a {
 }
 
 .banner-content {
-    width: 500px;
+    max-width: 600px;
 }
 
 /* main section style */
@@ -271,15 +271,55 @@ textarea {
 
 /* Mobile Device */
 
-/* .hide{ */
-    display: none;
-}
 @media screen and (max-width: 576px) {
-    .skills-container{
+    .header{
+        background-image: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    nav, .about-info-container, .skills-container{
         flex-direction: column;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .download-btn, .contact-btn{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    nav > ul{
+        flex-direction: column;
+        gap: 10px;
     }
     #widd{
         padding: 20px;
     }
+    .resume-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],
+.contact input[type="email"],
+textarea{
+    width: 80%;
+}
+.about{
+    padding: 10px;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
     
 }
