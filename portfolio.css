@@ -41,6 +41,13 @@ body {
 .btn-protfolio {
     font-weight: 900;
     font-size: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #FFF8F3;
+    border: 2px solid;
+    border-color: #FD6E0A;
+    flex-shrink: 0;
+    padding: 9px 8px;
 }
 
 .download-btn {
