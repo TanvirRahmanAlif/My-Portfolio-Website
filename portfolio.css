@@ -5,6 +5,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.hireme {
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 39px;
+}
+
 .btn-primary {
     border-radius: 5px;
     background: #FD6E0A;
@@ -15,10 +25,24 @@ body {
     padding: 15px 35px;
 }
 
-.btn-protfolio{
-    font-weight:900;
+.linkedin-btn {
+    border-radius: 5px;
+    text-decoration: none;
+    background: #FFF8F3;
+    border: 2px solid;
+    border-color: #FD6E0A;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FD6E0A;
+    padding: 13px 33px;
+}
+
+.btn-protfolio {
+    font-weight: 900;
     font-size: 25px;
 }
+
 .download-btn {
     border-radius: 5px;
     text-decoration: none;
@@ -28,6 +52,12 @@ body {
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+}
+
+.banner-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .contact-btn {
@@ -40,8 +70,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #FD6E0A;
-    padding: 13px 33px;
-    margin-left: 15px;
+    padding: 13px 59px;
 }
 
 .orange {
@@ -278,54 +307,72 @@ textarea {
 /* Mobile Device */
 
 @media screen and (max-width: 576px) {
-    .header{
+    .header {
         background-image: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         padding: 20px;
     }
-    .banner-content{
+
+    .banner-content {
         width: 100%;
     }
-    nav, .about-info-container, .skills-container{
+
+    .banner-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    nav,
+    .about-info-container,
+    .skills-container {
         flex-direction: column;
     }
-    .banner .profile-pic{
+
+    .banner .profile-pic {
         width: 100%;
     }
-    .download-btn, .contact-btn{
+
+    /* .download-btn .contact-btn{
         flex-direction: column;
         margin-bottom: 15px;
-    }
-    nav > ul{
+        gap: 100px;
+    } */
+
+    nav>ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 40px;
     }
-    #widd{
+
+    #widd {
         padding: 20px;
     }
-    .resume-container{
+
+    .resume-container {
         flex-direction: column;
         align-items: center;
     }
-    footer{
+
+    footer {
         flex-direction: column;
         padding: 10px;
     }
-    .footer-column{
+
+    .footer-column {
         width: 100%;
     }
+
     .contact input[type="text"],
-.contact input[type="email"],
-textarea{
-    width: 80%;
-}
-.about{
-    padding: 10px;
-}
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .about {
+        padding: 10px;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
-    
-}
+@media screen and (min-width: 576px) and (max-width: 960px) {}
